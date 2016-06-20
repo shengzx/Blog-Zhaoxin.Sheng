@@ -4,4 +4,4 @@ app.config(['$routeProvider', function ($routeProvider) {
     when('/General', { templateUrl: 'BootModel/General.html', controller: GeneralCtrl }).
     when('/Grid', { templateUrl: 'BootModel/Grid.html', controller: GeneralCtrl }).
     otherwise({ redirectTo: '/General' });
-}])
+}]);

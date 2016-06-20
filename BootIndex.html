@@ -17,12 +17,15 @@
     <script src="Angular/angular-cookies.min.js"></script>
     <script src="Angular/ui-bootstrap-tpls-0.12.1.js"></script>
     <script src="Angular/Route/app-boot.js"></script>
+    <script src="Angular/class.js"></script>
+    <script src="Angular/common.js"></script>
+    <script src="Angular/directive.js"></script>
     <script src="Angular/Control/ctrl-boot.js"></script>
-    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!--<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">-->
     <script src="Js/Shengzx.js"></script>
     <link href="Css/Zhaoxin.Sheng.css" rel="stylesheet" />
-    <title>Boot首页</title>
+    <title>Zhaoxin.Sheng-Blog</title>
 </head>
 <body>
     <nav class="navbar navbar-default">
@@ -55,167 +58,7 @@
     <div class="main-container" id="main-container">
         <!--左侧菜单-->
         <div id="sidebar" class="sidebar ">
-            <div class="boot sidebar-shortcuts" id="sidebar-shortcuts">
-                <!--菜单top-->
-                <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
-                    <h5>Bootstraps实例</h5>
-                </div>
-                <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
-                    <h5>Boot</h5>
-                </div>
-            </div>
-            <ul class=" nav boot nav-list">
-                <li class="active">
-                    <a href="#/General">
-                        <i class="glyphicon glyphicon-book"></i>
-                        <span class="menu-text"> Bootstrap简介 </span>
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-                <li class="hsub">
-                    <a href="javascript:void(0)" class="dropdown-toggle">
-                        <i class="glyphicon glyphicon-eye-open"></i>
-                        <span class="menu-text"> Bootstrap CSS </span>
-                        <b class="arrow glyphicon glyphicon-menu-down"></b>
-                    </a>
-                    <b class="arrow"></b>
-                    <ul class="submenu">
-                        <li class="">
-                            <a href="#/Grid">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                栅格系统
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                内容排版
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                数据表格
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                表单按钮
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                响应图片
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                辅助样式
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                    </ul>
-                </li>
-                <li class="hsub">
-                    <a href="javascript:void(0)" class="dropdown-toggle">
-                        <i class="glyphicon glyphicon-eye-open"></i>
-                        <span class="menu-text"> 布局组件 </span>
-                        <b class="arrow glyphicon glyphicon-menu-down"></b>
-                    </a>
-                    <b class="arrow"></b>
-                    <ul class="submenu">
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                字体图标
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                按钮控制
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                输入框组
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                导航控制
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                页面操作
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                    </ul>
-                </li>
-                <li class="hsub">
-                    <a href="javascript:void(0)" class="dropdown-toggle">
-                        <i class="glyphicon glyphicon-eye-open"></i>
-                        <span class="menu-text"> Bootstrap 插件 </span>
-                        <b class="arrow glyphicon glyphicon-menu-down"></b>
-                    </a>
-                    <b class="arrow"></b>
-                    <ul class="submenu">
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                过渡效果
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                模态框
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                下拉菜单
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                滚动监听
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-caret-right"></i>
-                                警告信息
-                            </a>
-                            <b class="arrow"></b>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <mianmenu menu-lable="Bootstraps实例" menu-class="boot"></mianmenu>
         </div>
         <div ng-view class="main-content">
         </div>

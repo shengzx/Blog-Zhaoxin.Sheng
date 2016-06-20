@@ -15,8 +15,9 @@ app.config(['$routeProvider',"$httpProvider", function ($routeProvider,$httpProv
     when('/test', { templateUrl: 'model/test.html', controller: testCtrl }).
     otherwise({ redirectTo: '/Index' });
     $httpProvider.interceptors.push('timestampMarker');
-}])
-app.config(['$httpProvider', function ($httpProvider) {
+}]);
+app.config(['$httpProvider','$compileProvider', function ($httpProvider,$compileProvider) {
+    $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension):/ );
     $httpProvider.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded';
     $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 }]);
@@ -63,7 +64,7 @@ login.config(['$routeProvider', "$httpProvider", function ($routeProvider, $http
     when('/OrderDe/:value', { templateUrl: 'Model/OrderDe.html', controller: OrderDeCtrl }).
     otherwise({ redirectTo: '/login' });
     $httpProvider.interceptors.push('timestampMarker');
-}])
+}]);
 login.config(['$httpProvider', function ($httpProvider) {
     $httpProvider.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded';
     $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
@@ -101,8 +102,8 @@ registe.config(['$routeProvider', function ($routeProvider) {
     when('/Registe', { templateUrl: 'model/Registe.html', controller: RegisteCtrl }).
     when('/index', { templateUrl: 'model/Index.html', controller: LoginCtrl }).
     when('/login/:value', { templateUrl: 'Model/login.html', controller: LoginCtrl }).
-    otherwise({ redirectTo: '/Registe' })
-}])
+    otherwise({ redirectTo: '/Registe' });
+}]);
 registe.config(['$httpProvider', function ($httpProvider) {
     $httpProvider.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded';
     $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';

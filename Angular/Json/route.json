@@ -1,0 +1,13 @@
+[
+    {
+        "BaseAddress": "http://localhost:3000/Angular/Json",
+        "Name": "基础功能数据服务",
+        "AddressModels": [
+            {
+                "Type": "GET",
+                "Url": "bootmenu.json",
+                "content": "获取boot菜单"
+            }
+        ]
+    }
+]

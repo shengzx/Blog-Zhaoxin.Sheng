@@ -1,0 +1,39 @@
+{
+    "MenuName": "BootStrap",
+    "Type": "string",
+    "Url": "#",
+    "Describe": "菜单描述",
+    "Menu": [
+        {
+            "MenuName": "BootStrap简介",
+            "Url": "#/General",
+            "parame": "",
+            "Type": "页面",
+            "icon": "glyphicon-book",
+            "Describe": "BootStrap简介",
+            "Level": 1,
+            "Child": false
+        },
+        {
+            "MenuName": "BootStrap Css",
+            "Url": "chrome-extension:",
+            "parame": "",
+            "Type": "菜单",
+            "icon": "glyphicon-eye-open",
+            "Describe": "Css菜单",
+            "Level": 1,
+            "Child": [
+                {
+                    "MenuName": "栅格系统",
+                    "Url": "#/Grid",
+                    "parame": "",
+                    "Type": "页面",
+                    "icon": "",
+                    "Describe": "栅格系统系统介绍",
+                    "Level": 2,
+                    "Child": false
+                }
+            ]
+        }
+    ]
+}

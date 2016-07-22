@@ -854,3 +854,29 @@ nav-list li > .arrow {
     margin-left: -1em;
     padding-right: 0.5em;
 }
+.img-scale-sm{ display:block;
+
+}
+.img-scale-sm img{ display:block;
+ width: 100%;
+}
+.img-scale-lg{
+    display: none;
+}
+
+.img-scale-lg.active{
+    display:block;
+    background-color: #000;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding-top: 50%;
+}
+.pinch-zoom-container{
+    display: block;
+}
+.img-scale-lg.active img{
+   width: 100%;
+   z-index: 100;
+}

@@ -10,7 +10,7 @@ function ajaxParam(route, headers, bodyParam, UrlParam) {
 }
 function eventParam(website,params,Name) {
     return function (fun) {
-        var a = new ajaxParam(params);
+        var a = new  (params);
         website.ajax(a,function(data){
             if(fun) fun(data);
         });

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" id="ng-app" ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--为了确保适当的绘制和触屏缩放-->
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js">
+</script>
+    <!--<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">-->
+
+    <script src="http://192.168.100.29:3001/src/pinchzoom.js">
+</script>
+
+    <script src="../../Js/Shengzx.js">
+</script>
+    <link href="../../Css/Zhaoxin.Sheng.css" rel="stylesheet" />
+    <title>Zhaoxin.Sheng-Blog</title>
+    <script>
+$(function() {
+    $(".img-scale-sm img").click(function(a) {
+        var b = $("#lg-img");
+        var c = $("#sm-img");
+        c.css("display", "none");
+        b.children('img').remove();
+        b.prepend('<img src="' + a.currentTarget.currentSrc + '" />');
+        $(".img-scale-lg").addClass('active');
+        $('#lg-img').each(function() {
+            new RTP.PinchZoom($(this),{});
+        });
+    });
+    $(".img-scale-lg").click(function() {
+        var c = $("#sm-img");
+        c.css("display", "block");
+        $(".img-scale-lg").removeClass('active');
+    });
+
+});
+</script>
+    <script type="text/javascript">
+</script>
+</head>
+<body class="container-fluid">
+    <div class="row">
+        <div id="sm-img" class="col-12 img-scale-sm">
+            <img src="http://192.168.100.29:3000/Image/BlogLOGO.jpg" />
+            <img src="http://192.168.100.29:3000/Image/Angularlogo.png" />
+        </div>
+        <div class="col-12 img-scale-lg">
+            <div id="lg-img">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

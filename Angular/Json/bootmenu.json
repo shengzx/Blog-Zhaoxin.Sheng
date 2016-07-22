@@ -9,17 +9,17 @@
             "Url": "#/General",
             "parame": "",
             "Type": "页面",
-            "icon": "glyphicon-book",
+            "icon": "glyphicon glyphicon-book",
             "Describe": "BootStrap简介",
             "Level": 1,
             "Child": false
         },
         {
             "MenuName": "BootStrap Css",
-            "Url": "chrome-extension:",
+            "Url": "javascript:void(0)",
             "parame": "",
             "Type": "菜单",
-            "icon": "glyphicon-eye-open",
+            "icon": "glyphicon glyphicon-eye-open",
             "Describe": "Css菜单",
             "Level": 1,
             "Child": [

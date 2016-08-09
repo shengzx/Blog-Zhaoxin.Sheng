@@ -32,36 +32,6 @@
                     "Describe": "栅格系统系统介绍",
                     "Level": 2,
                     "Child": false
-                },
-                {
-                    "MenuName": "栅格系统",
-                    "Url": "#/Grid",
-                    "parame": "",
-                    "Type": "页面",
-                    "icon": "",
-                    "Describe": "栅格系统系统介绍",
-                    "Level": 2,
-                    "Child": false
-                },
-                {
-                    "MenuName": "栅格系统",
-                    "Url": "#/Grid",
-                    "parame": "",
-                    "Type": "页面",
-                    "icon": "",
-                    "Describe": "栅格系统系统介绍",
-                    "Level": 2,
-                    "Child": false
-                },
-                {
-                    "MenuName": "栅格系统",
-                    "Url": "#/Grid",
-                    "parame": "",
-                    "Type": "页面",
-                    "icon": "",
-                    "Describe": "栅格系统系统介绍",
-                    "Level": 2,
-                    "Child": false
                 }
             ]
         }

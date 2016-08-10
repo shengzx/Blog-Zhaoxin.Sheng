@@ -474,8 +474,10 @@ nav-list li > .arrow {
     .nav-list > li > a {
         display: block;
         height: 39px;
+        /* float: left; */
+        text-align: left;
         line-height: 17px;
-        padding-left: 7px;
+        padding-left: 0px;
         text-shadow: none !important;
         font-size: 13px;
         text-decoration: none;
@@ -583,6 +585,7 @@ nav-list li > .arrow {
     z-index: 1;
     left: 18px;
     top: 0;
+    color: #333;
     bottom: 0;
     border: 1px dotted;
     border-width: 0 0 0 1px;
@@ -622,6 +625,7 @@ nav-list li > .arrow {
     z-index: 1;
     left: 20px;
     top: 17px;
+    color: #333;
     border: 1px dotted;
     border-width: 1px 0 0;
 }
@@ -643,6 +647,7 @@ nav-list li > .arrow {
     border-top-color: #e4e4e4;
     background-color: #fff;
     color: #616161;
+    text-align: left;
 }
 
     .nav-list > li .submenu > li > a:hover {
@@ -668,6 +673,7 @@ nav-list li > .arrow {
 
 .boot.nav-list > li .submenu > li.active a {
     color: #563D7C;
+    text-align: left;
 }
 
 .angular.nav-list > li .submenu > li.active a {

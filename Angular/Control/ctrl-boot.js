@@ -1,8 +1,12 @@
-﻿
-function GeneralCtrl($scope) {
+﻿app.controller('generalCtrl', ['$scope', function ($scope) {
 
-}
 
-function Grid($scope) {
+}]); 
+app.controller('gridCtrl', ['$scope', function ($scope) {
 
-}
+
+}]);
+app.controller('blogEditCtrl', ['$scope', function ($scope) {
+
+
+}]);
